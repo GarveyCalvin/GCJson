@@ -8,7 +8,7 @@ GCJson is a JSON and array or dictionary conversion tools.
 
 You can use It convert json to dictionary or json to array. Or dictionary to json or array to json.
 
-It's a good small tool. Only have a swift file.
+It's a good small tool. Only have a swift file. It is created in swift v1.2.
 
 ##Usage
 
