@@ -14,13 +14,7 @@ class ViewController: UIViewController {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
         
-        let dic = ["modify": "true", "isOn": "false"]
-        let array = ["modify", "true", "isOn", "false"]
-        let jsonStr = GCJson.toJson(array)
-        println(jsonStr)
-
-        let dicOrArray = GCJson.toArray(jsonStr as! String)
-        println(dicOrArray)
+        
     }
 
     override func didReceiveMemoryWarning() {

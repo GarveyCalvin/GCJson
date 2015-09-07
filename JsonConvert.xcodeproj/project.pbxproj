@@ -7,6 +7,11 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1BE4A8EA1B9D7FEA006BC5E8 /* GCJson.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BFD22781B662BB40030294E /* GCJson.swift */; };
+		1BE4A9E71B9D8FB9006BC5E8 /* JsonDicFile.geojson in Resources */ = {isa = PBXBuildFile; fileRef = 1BE4A9E61B9D8FB9006BC5E8 /* JsonDicFile.geojson */; };
+		1BE4A9E91B9D9359006BC5E8 /* JsonArrayFile.geojson in Resources */ = {isa = PBXBuildFile; fileRef = 1BE4A9E81B9D9359006BC5E8 /* JsonArrayFile.geojson */; };
+		1BE4A9EA1B9D941E006BC5E8 /* JsonDicFile.geojson in Resources */ = {isa = PBXBuildFile; fileRef = 1BE4A9E61B9D8FB9006BC5E8 /* JsonDicFile.geojson */; };
+		1BE4A9EB1B9D941E006BC5E8 /* JsonArrayFile.geojson in Resources */ = {isa = PBXBuildFile; fileRef = 1BE4A9E81B9D9359006BC5E8 /* JsonArrayFile.geojson */; };
 		1BFD22591B662B920030294E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BFD22581B662B920030294E /* AppDelegate.swift */; };
 		1BFD225B1B662B920030294E /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BFD225A1B662B920030294E /* ViewController.swift */; };
 		1BFD225E1B662B920030294E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1BFD225C1B662B920030294E /* Main.storyboard */; };
@@ -27,6 +32,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		1BE4A9E61B9D8FB9006BC5E8 /* JsonDicFile.geojson */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = JsonDicFile.geojson; sourceTree = "<group>"; };
+		1BE4A9E81B9D9359006BC5E8 /* JsonArrayFile.geojson */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = JsonArrayFile.geojson; sourceTree = "<group>"; };
 		1BFD22531B662B920030294E /* JsonConvert.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = JsonConvert.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		1BFD22571B662B920030294E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		1BFD22581B662B920030294E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -102,6 +109,8 @@
 			isa = PBXGroup;
 			children = (
 				1BFD226E1B662B920030294E /* JsonConvertTests.swift */,
+				1BE4A9E61B9D8FB9006BC5E8 /* JsonDicFile.geojson */,
+				1BE4A9E81B9D9359006BC5E8 /* JsonArrayFile.geojson */,
 				1BFD226C1B662B920030294E /* Supporting Files */,
 			);
 			path = JsonConvertTests;
@@ -195,6 +204,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1BE4A9EB1B9D941E006BC5E8 /* JsonArrayFile.geojson in Resources */,
+				1BE4A9EA1B9D941E006BC5E8 /* JsonDicFile.geojson in Resources */,
 				1BFD225E1B662B920030294E /* Main.storyboard in Resources */,
 				1BFD22631B662B920030294E /* LaunchScreen.xib in Resources */,
 				1BFD22601B662B920030294E /* Images.xcassets in Resources */,
@@ -205,6 +216,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1BE4A9E71B9D8FB9006BC5E8 /* JsonDicFile.geojson in Resources */,
+				1BE4A9E91B9D9359006BC5E8 /* JsonArrayFile.geojson in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -226,6 +239,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				1BFD226F1B662B920030294E /* JsonConvertTests.swift in Sources */,
+				1BE4A8EA1B9D7FEA006BC5E8 /* GCJson.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -343,7 +357,9 @@
 		1BFD22731B662B920030294E /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				FRAMEWORK_SEARCH_PATHS = "";
 				INFOPLIST_FILE = JsonConvert/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -353,7 +369,9 @@
 		1BFD22741B662B920030294E /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				FRAMEWORK_SEARCH_PATHS = "";
 				INFOPLIST_FILE = JsonConvert/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -413,6 +431,7 @@
 				1BFD22741B662B920030294E /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		1BFD22751B662B920030294E /* Build configuration list for PBXNativeTarget "JsonConvertTests" */ = {
 			isa = XCConfigurationList;
@@ -421,6 +440,7 @@
 				1BFD22771B662B920030294E /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

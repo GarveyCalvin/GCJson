@@ -1,0 +1,12 @@
+[
+  {
+    "topic" : "improxy",
+    "data" : {
+      "flag" : 1,
+      "data" : "{\"code\":\"0\",\"msg\":\"{\\\"messageIds\\\":[\\\"8d6dc2d9-9688-4391-8fab-c9cb46cc1667\\\"],\\\"request\\\":{\\\"info\\\":[{\\\"message\\\":{\\\"data\\\":{\\\"message\\\":{\\\"content\\\":\\\"nihao\\\"},\\\"type\\\":\\\"message\\\",\\\"from\\\":\\\"caad7d453adfa63237a87458e27ae0af41b5fec8\\\",\\\"timestamp\\\":1441611742415}},\\\"regIds\\\":[\\\"4815f1432172d26759a94644845b0cc76adf91f0\\\"]}]},\\\"timestamp\\\":1441611742415}\"}",
+      "uuid" : "improxy",
+      "msgid" : 503,
+      "ver" : 0
+    }
+  }
+]
