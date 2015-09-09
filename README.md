@@ -14,7 +14,7 @@ It's a good small tool. Only have a swift file. It is created in swift v1.2.
 
 Usage:
 
-```
+```swift
 let dic = ["modify": "true", "isOn": "false"]
 let array = ["modify", "true", "isOn", "false"]
 let jsonStr = GCJson.toJson(array)
@@ -26,7 +26,7 @@ println(dicOrArray)
 
 Public method list:
 
-```
+```swift
 GCJson.toJson()
 GCJson.toArray()
 GCJson.toDic()
