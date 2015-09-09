@@ -4,6 +4,8 @@
 
 Create by `GarveyCalvin` in`GCJson` project.
 
+GCJson can be Use in iOS.
+
 GCJson is a JSON and array or dictionary conversion tools.
 
 You can use It convert json to dictionary or json to array. Or dictionary to json or array to json.
