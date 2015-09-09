@@ -63,6 +63,7 @@ class GCJson {
         return nil
     }
     
+    /// Conver json string to NSDictionary from local file
     class func toDicFromFile(filePath: String) -> NSDictionary? {
         if let dic = toJsonObj(filePath) as? NSDictionary {
             return dic
@@ -70,12 +71,17 @@ class GCJson {
         return nil
     }
     
+    /// Conver json string to NSArray from local file
     class func toArrayFromFile(filePath: String) -> NSArray? {
         if let array = toJsonObj(filePath) as? NSArray {
             return array
         }
         return nil
     }
+    
+    
+    
+    // MARK: - Private method
     
     private class func toData(jsonData: NSData?) -> AnyObject? {
         if let jsonData = jsonData {

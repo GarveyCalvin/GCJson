@@ -31,3 +31,30 @@ GCJson.toJson()
 GCJson.toArray()
 GCJson.toDic()
 ```
+
+**Update in 2015.9.9**
+
+You can use `toDicFromFile(_:)` and `toArrayFromFile(_:)` to convert your jsonSring to NSArray or NSDictionary from local file.
+
+For example:
+
+`JsonArrayFile.geojson` file
+
+```swift
+[
+ {
+    "name": "Garvey",
+    "age": "21"
+ }
+]
+```
+
+Test code
+
+```swift
+if let filePath = NSBundle.mainBundle().pathForResource("JsonArrayFile", ofType: "geojson") {
+    if let array = GCJson.toArrayFromFile(filePath) {
+        println(array)
+    }
+}
+```
