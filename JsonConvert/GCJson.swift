@@ -13,28 +13,14 @@ class GCJson {
     // Convert NSDictionary or NSArray to JSON data from a Foundation object
     class func toJson(arrayOrDictionary: AnyObject) -> NSString? {
         if let array = arrayOrDictionary as? NSArray {
-            var error: NSError?
-            let jsonData = NSJSONSerialization.dataWithJSONObject(array, options: NSJSONWritingOptions.PrettyPrinted, error: &error)
-            if error != nil {
-                println(error)
-                return nil
-            }
-            
-            if let jsonData = jsonData {
+            if let jsonData = dataWithJsonObject(array) {
                 let json = NSString(data: jsonData, encoding: NSUTF8StringEncoding)
                 return json
             }
         }
-        
+    
         if let dictionary = arrayOrDictionary as? NSDictionary {
-            var error: NSError?
-            let jsonData = NSJSONSerialization.dataWithJSONObject(dictionary, options: NSJSONWritingOptions.PrettyPrinted, error: &error)
-            if error != nil {
-                println(error)
-                return nil
-            }
-            
-            if let jsonData = jsonData {
+            if let jsonData = dataWithJsonObject(dictionary) {
                 let json = NSString(data: jsonData, encoding: NSUTF8StringEncoding)
                 return json
             }
@@ -83,15 +69,29 @@ class GCJson {
     
     // MARK: - Private method
     
+    private class func dataWithJsonObject(obj: AnyObject) -> NSData? {
+        do {
+            let data = try NSJSONSerialization.dataWithJSONObject(obj, options: NSJSONWritingOptions.PrettyPrinted)
+            return data
+        } catch let error as NSError {
+            print(error)
+            return nil
+        }
+    }
+    
+    private class func jsonObjectWithData(jsonData: NSData) -> AnyObject? {
+        do {
+            let dicOrArray = try NSJSONSerialization.JSONObjectWithData(jsonData, options: NSJSONReadingOptions.AllowFragments)
+            return dicOrArray
+        } catch let error as NSError {
+            print(error)
+            return nil
+        }
+    }
+    
     private class func toData(jsonData: NSData?) -> AnyObject? {
         if let jsonData = jsonData {
-            var error: NSError?
-            let dicOrArray: AnyObject? = NSJSONSerialization.JSONObjectWithData(jsonData, options: NSJSONReadingOptions.AllowFragments, error: &error)
-            if error != nil {
-                println(error)
-                return nil
-            }
-            
+            let dicOrArray = jsonObjectWithData(jsonData)
             return dicOrArray
         }
         
@@ -99,17 +99,14 @@ class GCJson {
     }
     
     private class func toJsonObj(filePath: String) -> AnyObject? {
-        var error: NSError?
-        if let json = NSString(contentsOfFile: filePath, encoding: NSUTF8StringEncoding, error: &error) as? String {
-            if error != nil {
-                println(error)
-                return nil
-            }
-            
+        do {
+            let json = try NSString(contentsOfFile: filePath, encoding: NSUTF8StringEncoding)
             let jsonData = json.dataUsingEncoding(NSUTF8StringEncoding, allowLossyConversion: true)
             return toData(jsonData)
+        } catch let error as NSError {
+            print(error)
+            return nil
         }
-        return nil
     }
     
 }

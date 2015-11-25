@@ -37,7 +37,7 @@ class JsonConvertTests: XCTestCase {
     func testToDic() {
         let json = "{\"name\":\"Garvey\",\"age\":\"21\"}"
         if let dic = GCJson.toDic(json) {
-            println(dic)
+            print(dic)
             XCTAssertNotNil(dic, "dic should not nil")
             let bool = dic.isKindOfClass(NSDictionary)
             XCTAssertTrue(bool, "bool should be true")
@@ -50,7 +50,7 @@ class JsonConvertTests: XCTestCase {
     func testToArray() {
         let json = "[{\"name\":\"Garvey\",\"age\":\"21\"}]"
         if let array = GCJson.toArray(json) {
-            println(array)
+            print(array)
             XCTAssertNotNil(array, "array should not be nil")
             let bool = array.isKindOfClass(NSArray)
             XCTAssertTrue(bool, "bool should be true")
@@ -65,7 +65,7 @@ class JsonConvertTests: XCTestCase {
         let dic = ["name": "Garvey", "age": "21"]
         
         if let jsonArray = GCJson.toJson(array) {
-            println(jsonArray)
+            print(jsonArray)
             XCTAssertNotNil(jsonArray, "array should not be nil")
             let bool = jsonArray.isKindOfClass(NSString)
             XCTAssertTrue(bool, "bool should be true")
@@ -75,7 +75,7 @@ class JsonConvertTests: XCTestCase {
         XCTFail("jsonArray should not be nil")
     
         if let jsonDic = GCJson.toJson(dic) {
-            println(jsonDic)
+            print(jsonDic)
             XCTAssertNotNil(jsonDic, "jsonDic should not be nil")
             let bool = jsonDic.isKindOfClass(NSString)
             XCTAssertTrue(bool, "bool should be true")
@@ -88,7 +88,7 @@ class JsonConvertTests: XCTestCase {
     func testToDicFromFile() {
         if let filePath = NSBundle.mainBundle().pathForResource("JsonDicFile", ofType: "geojson") {
             if let dic = GCJson.toDicFromFile(filePath) {
-                println(dic)
+                print(dic)
                 XCTAssertNotNil(dic, "dic should not nil")
                 let bool = dic.isKindOfClass(NSDictionary)
                 XCTAssertTrue(bool, "bool should be true")
@@ -103,7 +103,7 @@ class JsonConvertTests: XCTestCase {
     func testToArrayFromFile() {
         if let filePath = NSBundle.mainBundle().pathForResource("JsonArrayFile", ofType: "geojson") {
             if let array = GCJson.toArrayFromFile(filePath) {
-                println(array)
+                print(array)
                 XCTAssertNotNil(array, "dic should not nil")
                 let bool = array.isKindOfClass(NSArray)
                 XCTAssertTrue(bool, "bool should be true")

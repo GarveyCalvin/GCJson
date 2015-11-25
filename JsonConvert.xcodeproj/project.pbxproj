@@ -168,6 +168,7 @@
 		1BFD224B1B662B920030294E /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
+				LastSwiftUpdateCheck = 0700;
 				LastUpgradeCheck = 0640;
 				ORGANIZATIONNAME = GarveyCalvin;
 				TargetAttributes = {
@@ -359,10 +360,12 @@
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer: Bai JiaWei (6JLYM89ASZ)";
 				FRAMEWORK_SEARCH_PATHS = "";
 				INFOPLIST_FILE = JsonConvert/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "6668eaf4-4d72-49ce-a09f-db12c60ec7f1";
 			};
 			name = Debug;
 		};
@@ -371,10 +374,12 @@
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer: Bai JiaWei (6JLYM89ASZ)";
 				FRAMEWORK_SEARCH_PATHS = "";
 				INFOPLIST_FILE = JsonConvert/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "6668eaf4-4d72-49ce-a09f-db12c60ec7f1";
 			};
 			name = Release;
 		};

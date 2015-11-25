@@ -12,6 +12,8 @@ You can use It convert json to dictionary or json to array. Or dictionary to jso
 
 It's a good small tool. Only have a swift file. It is created in swift v1.2.
 
+2015/11/25: Support to swift 1.2
+
 ##Usage
 
 Usage:
