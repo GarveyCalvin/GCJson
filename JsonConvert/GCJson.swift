@@ -8,10 +8,10 @@
 
 import Foundation
 
-class GCJson {
+public class GCJson {
     
     // Convert NSDictionary or NSArray to JSON data from a Foundation object
-    class func toJson(arrayOrDictionary: AnyObject) -> NSString? {
+    public class func toJson(arrayOrDictionary: AnyObject) -> NSString? {
         if let array = arrayOrDictionary as? NSArray {
             if let jsonData = dataWithJsonObject(array) {
                 let json = NSString(data: jsonData, encoding: NSUTF8StringEncoding)
@@ -30,7 +30,7 @@ class GCJson {
     }
     
     // Convert json string to NSDictionary
-    class func toDic(jsonString: String) -> NSDictionary? {
+    public class func toDic(jsonString: String) -> NSDictionary? {
         let jsonData = jsonString.dataUsingEncoding(NSUTF8StringEncoding, allowLossyConversion: true)
         if let dictionary = toData(jsonData) as? NSDictionary {
             return dictionary
@@ -40,7 +40,7 @@ class GCJson {
     }
     
     // Convert json string to NSArray
-    class func toArray(jsonString: String) -> NSArray? {
+    public class func toArray(jsonString: String) -> NSArray? {
         let jsonData = jsonString.dataUsingEncoding(NSUTF8StringEncoding, allowLossyConversion: true)
         if let array = toData(jsonData) as? NSArray {
             return array
@@ -50,7 +50,7 @@ class GCJson {
     }
     
     /// Conver json string to NSDictionary from local file
-    class func toDicFromFile(filePath: String) -> NSDictionary? {
+    public class func toDicFromFile(filePath: String) -> NSDictionary? {
         if let dic = toJsonObj(filePath) as? NSDictionary {
             return dic
         }
@@ -58,7 +58,7 @@ class GCJson {
     }
     
     /// Conver json string to NSArray from local file
-    class func toArrayFromFile(filePath: String) -> NSArray? {
+    public class func toArrayFromFile(filePath: String) -> NSArray? {
         if let array = toJsonObj(filePath) as? NSArray {
             return array
         }
