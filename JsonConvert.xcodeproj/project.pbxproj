@@ -7,7 +7,13 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		1BE4A8EA1B9D7FEA006BC5E8 /* GCJson.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BFD22781B662BB40030294E /* GCJson.swift */; };
+		1B5AF9E31CE9B42D00FF0F2D /* GCJson.h in Headers */ = {isa = PBXBuildFile; fileRef = 1B5AF9E21CE9B42D00FF0F2D /* GCJson.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		1B5AF9ED1CE9B43300FF0F2D /* GCJson.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BFD22781B662BB40030294E /* GCJson.swift */; };
+		1B5AF9EE1CE9B43700FF0F2D /* test.geojson in Resources */ = {isa = PBXBuildFile; fileRef = 1B4B2E681CC4C70700BCFC4A /* test.geojson */; };
+		1B5AF9F01CE9B44E00FF0F2D /* GCJson.swift in Headers */ = {isa = PBXBuildFile; fileRef = 1BFD22781B662BB40030294E /* GCJson.swift */; settings = {ATTRIBUTES = (Public, ); }; };
+		1B5AF9F11CE9B46900FF0F2D /* GCJson.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1B5AF9E01CE9B42D00FF0F2D /* GCJson.framework */; };
+		1B5AF9F21CE9B46C00FF0F2D /* GCJson.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1B5AF9E01CE9B42D00FF0F2D /* GCJson.framework */; };
+		1B5AF9F31CE9B46C00FF0F2D /* GCJson.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 1B5AF9E01CE9B42D00FF0F2D /* GCJson.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		1BE4A9E71B9D8FB9006BC5E8 /* JsonDicFile.geojson in Resources */ = {isa = PBXBuildFile; fileRef = 1BE4A9E61B9D8FB9006BC5E8 /* JsonDicFile.geojson */; };
 		1BE4A9E91B9D9359006BC5E8 /* JsonArrayFile.geojson in Resources */ = {isa = PBXBuildFile; fileRef = 1BE4A9E81B9D9359006BC5E8 /* JsonArrayFile.geojson */; };
 		1BE4A9EA1B9D941E006BC5E8 /* JsonDicFile.geojson in Resources */ = {isa = PBXBuildFile; fileRef = 1BE4A9E61B9D8FB9006BC5E8 /* JsonDicFile.geojson */; };
@@ -18,10 +24,16 @@
 		1BFD22601B662B920030294E /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1BFD225F1B662B920030294E /* Images.xcassets */; };
 		1BFD22631B662B920030294E /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1BFD22611B662B920030294E /* LaunchScreen.xib */; };
 		1BFD226F1B662B920030294E /* JsonConvertTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BFD226E1B662B920030294E /* JsonConvertTests.swift */; };
-		1BFD22791B662BB40030294E /* GCJson.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BFD22781B662BB40030294E /* GCJson.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
+		1B5AF9F41CE9B46C00FF0F2D /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 1BFD224B1B662B920030294E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 1B5AF9DF1CE9B42D00FF0F2D;
+			remoteInfo = GCJson;
+		};
 		1BFD22691B662B920030294E /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 1BFD224B1B662B920030294E /* Project object */;
@@ -31,7 +43,25 @@
 		};
 /* End PBXContainerItemProxy section */
 
+/* Begin PBXCopyFilesBuildPhase section */
+		1B5AF9F61CE9B46C00FF0F2D /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				1B5AF9F31CE9B46C00FF0F2D /* GCJson.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
+		1B4B2E681CC4C70700BCFC4A /* test.geojson */ = {isa = PBXFileReference; lastKnownFileType = text; name = test.geojson; path = ../JsonConvert/test.geojson; sourceTree = "<group>"; };
+		1B5AF9E01CE9B42D00FF0F2D /* GCJson.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = GCJson.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		1B5AF9E21CE9B42D00FF0F2D /* GCJson.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GCJson.h; sourceTree = "<group>"; };
+		1B5AF9E41CE9B42D00FF0F2D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		1BE4A9E61B9D8FB9006BC5E8 /* JsonDicFile.geojson */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = JsonDicFile.geojson; sourceTree = "<group>"; };
 		1BE4A9E81B9D9359006BC5E8 /* JsonArrayFile.geojson */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = JsonArrayFile.geojson; sourceTree = "<group>"; };
 		1BFD22531B662B920030294E /* JsonConvert.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = JsonConvert.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -44,14 +74,23 @@
 		1BFD22681B662B920030294E /* JsonConvertTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = JsonConvertTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		1BFD226D1B662B920030294E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		1BFD226E1B662B920030294E /* JsonConvertTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JsonConvertTests.swift; sourceTree = "<group>"; };
-		1BFD22781B662BB40030294E /* GCJson.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GCJson.swift; sourceTree = "<group>"; };
+		1BFD22781B662BB40030294E /* GCJson.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = GCJson.swift; path = ../JsonConvert/GCJson.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		1B5AF9DC1CE9B42D00FF0F2D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		1BFD22501B662B920030294E /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1B5AF9F21CE9B46C00FF0F2D /* GCJson.framework in Frameworks */,
+				1B5AF9F11CE9B46900FF0F2D /* GCJson.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -65,11 +104,23 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		1B5AF9E11CE9B42D00FF0F2D /* GCJson */ = {
+			isa = PBXGroup;
+			children = (
+				1B4B2E681CC4C70700BCFC4A /* test.geojson */,
+				1BFD22781B662BB40030294E /* GCJson.swift */,
+				1B5AF9E21CE9B42D00FF0F2D /* GCJson.h */,
+				1B5AF9E41CE9B42D00FF0F2D /* Info.plist */,
+			);
+			path = GCJson;
+			sourceTree = "<group>";
+		};
 		1BFD224A1B662B920030294E = {
 			isa = PBXGroup;
 			children = (
 				1BFD22551B662B920030294E /* JsonConvert */,
 				1BFD226B1B662B920030294E /* JsonConvertTests */,
+				1B5AF9E11CE9B42D00FF0F2D /* GCJson */,
 				1BFD22541B662B920030294E /* Products */,
 			);
 			sourceTree = "<group>";
@@ -79,6 +130,7 @@
 			children = (
 				1BFD22531B662B920030294E /* JsonConvert.app */,
 				1BFD22681B662B920030294E /* JsonConvertTests.xctest */,
+				1B5AF9E01CE9B42D00FF0F2D /* GCJson.framework */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -88,7 +140,6 @@
 			children = (
 				1BFD22581B662B920030294E /* AppDelegate.swift */,
 				1BFD225A1B662B920030294E /* ViewController.swift */,
-				1BFD22781B662BB40030294E /* GCJson.swift */,
 				1BFD225C1B662B920030294E /* Main.storyboard */,
 				1BFD225F1B662B920030294E /* Images.xcassets */,
 				1BFD22611B662B920030294E /* LaunchScreen.xib */,
@@ -126,7 +177,37 @@
 		};
 /* End PBXGroup section */
 
+/* Begin PBXHeadersBuildPhase section */
+		1B5AF9DD1CE9B42D00FF0F2D /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1B5AF9E31CE9B42D00FF0F2D /* GCJson.h in Headers */,
+				1B5AF9F01CE9B44E00FF0F2D /* GCJson.swift in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
 /* Begin PBXNativeTarget section */
+		1B5AF9DF1CE9B42D00FF0F2D /* GCJson */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1B5AF9EB1CE9B42D00FF0F2D /* Build configuration list for PBXNativeTarget "GCJson" */;
+			buildPhases = (
+				1B5AF9DB1CE9B42D00FF0F2D /* Sources */,
+				1B5AF9DC1CE9B42D00FF0F2D /* Frameworks */,
+				1B5AF9DD1CE9B42D00FF0F2D /* Headers */,
+				1B5AF9DE1CE9B42D00FF0F2D /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = GCJson;
+			productName = GCJson;
+			productReference = 1B5AF9E01CE9B42D00FF0F2D /* GCJson.framework */;
+			productType = "com.apple.product-type.framework";
+		};
 		1BFD22521B662B920030294E /* JsonConvert */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = 1BFD22721B662B920030294E /* Build configuration list for PBXNativeTarget "JsonConvert" */;
@@ -134,10 +215,12 @@
 				1BFD224F1B662B920030294E /* Sources */,
 				1BFD22501B662B920030294E /* Frameworks */,
 				1BFD22511B662B920030294E /* Resources */,
+				1B5AF9F61CE9B46C00FF0F2D /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				1B5AF9F51CE9B46C00FF0F2D /* PBXTargetDependency */,
 			);
 			name = JsonConvert;
 			productName = JsonConvert;
@@ -172,6 +255,9 @@
 				LastUpgradeCheck = 0640;
 				ORGANIZATIONNAME = GarveyCalvin;
 				TargetAttributes = {
+					1B5AF9DF1CE9B42D00FF0F2D = {
+						CreatedOnToolsVersion = 7.3;
+					};
 					1BFD22521B662B920030294E = {
 						CreatedOnToolsVersion = 6.4;
 					};
@@ -196,11 +282,20 @@
 			targets = (
 				1BFD22521B662B920030294E /* JsonConvert */,
 				1BFD22671B662B920030294E /* JsonConvertTests */,
+				1B5AF9DF1CE9B42D00FF0F2D /* GCJson */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
+		1B5AF9DE1CE9B42D00FF0F2D /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1B5AF9EE1CE9B43700FF0F2D /* test.geojson in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		1BFD22511B662B920030294E /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -225,11 +320,18 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
+		1B5AF9DB1CE9B42D00FF0F2D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1B5AF9ED1CE9B43300FF0F2D /* GCJson.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		1BFD224F1B662B920030294E /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				1BFD22791B662BB40030294E /* GCJson.swift in Sources */,
 				1BFD225B1B662B920030294E /* ViewController.swift in Sources */,
 				1BFD22591B662B920030294E /* AppDelegate.swift in Sources */,
 			);
@@ -240,13 +342,17 @@
 			buildActionMask = 2147483647;
 			files = (
 				1BFD226F1B662B920030294E /* JsonConvertTests.swift in Sources */,
-				1BE4A8EA1B9D7FEA006BC5E8 /* GCJson.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
+		1B5AF9F51CE9B46C00FF0F2D /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 1B5AF9DF1CE9B42D00FF0F2D /* GCJson */;
+			targetProxy = 1B5AF9F41CE9B46C00FF0F2D /* PBXContainerItemProxy */;
+		};
 		1BFD226A1B662B920030294E /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			target = 1BFD22521B662B920030294E /* JsonConvert */;
@@ -274,6 +380,54 @@
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
+		1B5AF9E91CE9B42D00FF0F2D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ANALYZER_NONNULL = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer: Bai JiaWei (6JLYM89ASZ)";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_TESTABILITY = YES;
+				INFOPLIST_FILE = GCJson/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.GarveyCalvin.GCJson;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		1B5AF9EA1CE9B42D00FF0F2D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ANALYZER_NONNULL = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer: Bai JiaWei (6JLYM89ASZ)";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = GCJson/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.GarveyCalvin.GCJson;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
 		1BFD22701B662B920030294E /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -361,12 +515,13 @@
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "iPhone Developer: Bai JiaWei (6JLYM89ASZ)";
+				EMBEDDED_CONTENT_CONTAINS_SWIFT = YES;
 				FRAMEWORK_SEARCH_PATHS = "";
 				INFOPLIST_FILE = JsonConvert/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE = "6668eaf4-4d72-49ce-a09f-db12c60ec7f1";
+				PROVISIONING_PROFILE = "3c90e5e6-d93a-4be3-8653-58d66cccf05c";
 			};
 			name = Debug;
 		};
@@ -376,12 +531,13 @@
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "iPhone Developer: Bai JiaWei (6JLYM89ASZ)";
+				EMBEDDED_CONTENT_CONTAINS_SWIFT = YES;
 				FRAMEWORK_SEARCH_PATHS = "";
 				INFOPLIST_FILE = JsonConvert/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE = "6668eaf4-4d72-49ce-a09f-db12c60ec7f1";
+				PROVISIONING_PROFILE = "3c90e5e6-d93a-4be3-8653-58d66cccf05c";
 			};
 			name = Release;
 		};
@@ -422,6 +578,14 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		1B5AF9EB1CE9B42D00FF0F2D /* Build configuration list for PBXNativeTarget "GCJson" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1B5AF9E91CE9B42D00FF0F2D /* Debug */,
+				1B5AF9EA1CE9B42D00FF0F2D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
 		1BFD224E1B662B920030294E /* Build configuration list for PBXProject "JsonConvert" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (

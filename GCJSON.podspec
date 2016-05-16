@@ -79,7 +79,7 @@ Pod::Spec.new do |s|
   #  Supports git, hg, bzr, svn and HTTP.
   #
 
-  s.source       = { :git => "https://github.com/GarveyCalvin/GCJson.git", :tag => "2.0" }
+  s.source       = { :git => "https://github.com/GarveyCalvin/GCJson.git", :commit => "009a8732bf0abd7572c7d6a4bc38493e7cb254c8" }
 
 
   # ――― Source Code ―――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――― #

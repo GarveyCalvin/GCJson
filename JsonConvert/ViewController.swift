@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import GCJson
 
 class ViewController: UIViewController {
 
@@ -14,7 +15,14 @@ class ViewController: UIViewController {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
         
-        
+        if let file = NSBundle.mainBundle().pathForResource("test", ofType: "geojson") {            
+            let dic = GCJson.toDicFromFile(file)
+            print(dic)
+            if let string = dic?["type"] as? String {
+                let response = GCJson.toDic(string)
+                print(response)
+            }
+        }
     }
 
     override func didReceiveMemoryWarning() {

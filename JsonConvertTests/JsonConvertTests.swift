@@ -8,7 +8,10 @@
 
 import UIKit
 import XCTest
-import JsonConvert
+//import JsonConvert
+//@import JsonConvert
+//@testable import JsonConvert
+import GCJson
 
 class JsonConvertTests: XCTestCase {
     

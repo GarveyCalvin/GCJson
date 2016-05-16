@@ -8,7 +8,7 @@
 
 import Foundation
 
-public class GCJson {
+@objc public class GCJson: NSObject {
     
     // Convert NSDictionary or NSArray to JSON data from a Foundation object
     public class func toJson(arrayOrDictionary: AnyObject) -> NSString? {
