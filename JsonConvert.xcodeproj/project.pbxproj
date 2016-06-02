@@ -384,7 +384,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				CLANG_ANALYZER_NONNULL = YES;
-				CODE_SIGN_IDENTITY = "iPhone Developer: Bai JiaWei (6JLYM89ASZ)";
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				CURRENT_PROJECT_VERSION = 1;
 				DEBUG_INFORMATION_FORMAT = dwarf;
 				DEFINES_MODULE = YES;
@@ -409,7 +409,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				CLANG_ANALYZER_NONNULL = YES;
-				CODE_SIGN_IDENTITY = "iPhone Developer: Bai JiaWei (6JLYM89ASZ)";
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				CURRENT_PROJECT_VERSION = 1;
 				DEFINES_MODULE = YES;
 				DYLIB_COMPATIBILITY_VERSION = 1;
@@ -585,6 +585,7 @@
 				1B5AF9EA1CE9B42D00FF0F2D /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		1BFD224E1B662B920030294E /* Build configuration list for PBXProject "JsonConvert" */ = {
 			isa = XCConfigurationList;
